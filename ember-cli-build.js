@@ -1,13 +1,25 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+//const cssBlockConfig = require('addon-test/lib/css-blocks-options');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     'addon-test': {
-      only: ['icon']
-    }
+      only: ['icon'],
+    },
+    'css-blocks': {
+      parserOpts: {},
+      analysisOpts: {},
+      optimization: {
+        rewriteIdents: true,
+        mergeDeclarations: true,
+        removeUnusedStyles: true,
+        conflictResolution: true,
+        enabled: false //process.env.EMBER_ENV !== 'development',
+      },
+      },
   });
 
   // Use `app.import` to add additional libraries to the generated

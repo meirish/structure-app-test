@@ -18,16 +18,15 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "addon-test": "link:../addon-test/packages/addon-test/",
-    "hs-popup-menu": "link:../addon-test/packages/hs-popup-menu/",
+    "@css-blocks/ember-cli": "^0.24.0",
     "@ember/optional-features": "^1.0.0",
+    "addon-test": "link:../addon-test/packages/addon-test/",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
     "ember-cli": "~3.13.1",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.11.1",
     "ember-cli-dependency-checker": "^3.1.0",
-    "ember-cli-eslint": "^5.1.0",
     "ember-cli-htmlbars": "^4.0.0",
     "ember-cli-htmlbars-inline-precompile": "^3.0.0",
     "ember-cli-inject-live-reload": "^2.0.1",
@@ -45,6 +44,7 @@
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
+    "hs-popup-menu": "link:../addon-test/packages/hs-popup-menu/",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.9.0"
   },
